@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #AFEEEE;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project4software_methodology.BuildYourOwnPizzaController">
+   <children>
+      <Label layoutX="137.0" layoutY="14.0" prefHeight="46.0" prefWidth="333.0" text="MAKE YOUR OWN PIZZA">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <HBox layoutX="22.0" layoutY="68.0" prefHeight="37.0" prefWidth="285.0">
+         <children>
+            <Label prefHeight="37.0" prefWidth="99.0" text="           Sauce:" textAlignment="CENTER" />
+            <RadioButton fx:id="tomatoSauce" mnemonicParsing="false" prefHeight="37.0" prefWidth="105.0" text="Tomato" />
+            <RadioButton fx:id="alfredoSauce" mnemonicParsing="false" prefHeight="52.0" prefWidth="122.0" text="Alfredo" />
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="105.0" prefHeight="37.0" prefWidth="417.0">
+         <children>
+            <Label prefHeight="37.0" prefWidth="94.0" text="               Size:" />
+            <RadioButton fx:id="smallSize" mnemonicParsing="false" prefHeight="37.0" prefWidth="91.0" text="Small" />
+            <RadioButton fx:id="mediumSize" mnemonicParsing="false" prefHeight="39.0" prefWidth="97.0" text="Medium" />
+            <RadioButton fx:id="largeSize" mnemonicParsing="false" prefHeight="37.0" prefWidth="117.0" text="Large" />
+         </children>
+      </HBox>
+      <GridPane layoutX="21.0" layoutY="149.0" prefHeight="151.0" prefWidth="379.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="90.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="215.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="86.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.0" minWidth="10.0" prefWidth="104.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="32.0" prefWidth="135.0" text="       Toppings:" />
+            <CheckBox fx:id="pepperoni" mnemonicParsing="false" prefHeight="43.0" prefWidth="131.0" text="Pepperoni" GridPane.columnIndex="1" />
+            <CheckBox fx:id="sausage" mnemonicParsing="false" text="Sausage" GridPane.columnIndex="2" />
+            <CheckBox fx:id="onion" mnemonicParsing="false" text="Onion" GridPane.columnIndex="3" />
+            <CheckBox fx:id="greenPepper" mnemonicParsing="false" text="Green Pepper" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <CheckBox fx:id="beef" mnemonicParsing="false" text="Beef" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <CheckBox fx:id="ham" mnemonicParsing="false" text="Ham" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <CheckBox fx:id="crabMeat" mnemonicParsing="false" text="Crab Meat" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <CheckBox fx:id="mushroom" mnemonicParsing="false" text="Mushroom" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <CheckBox fx:id="blackOlive" mnemonicParsing="false" text="Black Olive" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <CheckBox fx:id="tofu" mnemonicParsing="false" text="Tofu" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <CheckBox fx:id="jalapeno" mnemonicParsing="false" text="Jalapeno" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <CheckBox fx:id="shrimp" mnemonicParsing="false" text="Shrimp" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <CheckBox fx:id="squid" mnemonicParsing="false" text="Squid" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Label fx:id="priceLabel" layoutX="39.0" layoutY="307.0" prefHeight="18.0" prefWidth="62.0" text="Price:" textFill="#0a0a0a" />
+      <Button fx:id="placeOrderButton" layoutX="203.0" layoutY="338.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="187.0" text="Add to Order" />
+      <ImageView fitHeight="234.0" fitWidth="271.0" layoutX="386.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/images.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="priceField" layoutX="101.0" layoutY="304.0" prefHeight="26.0" prefWidth="138.0" />
+   </children>
+</AnchorPane>

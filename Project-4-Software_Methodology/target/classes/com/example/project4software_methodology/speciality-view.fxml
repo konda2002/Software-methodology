@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: AFEEEE;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project4software_methodology.SpecialityController">
+
+<children>
+    <VBox layoutX="14.0" layoutY="4.0" prefHeight="30.0" prefWidth="15.0" />
+    <ComboBox fx:id="specialtyChoices" layoutX="360.0" layoutY="93.0" prefWidth="150.0" />
+    <ComboBox fx:id="sizeChoices" layoutX="360.0" layoutY="141.0" prefWidth="150.0" />
+    <Label layoutX="272.0" layoutY="187.0" prefHeight="30.0" prefWidth="76.0" text="Extras:" textAlignment="CENTER">
+<!--        <font>-->
+<!--            <Font name="System Bold" size="20.0" />-->
+<!--        </font>-->
+    </Label>
+    <Label layoutX="270.0" layoutY="93.0" prefHeight="26.0" prefWidth="82.0" text="Select Type:">
+<!--        <font>-->
+<!--            <Font name="System Bold" size="14.0" />-->
+<!--        </font>-->
+    </Label>
+    <Label layoutX="270.0" layoutY="145.0" prefHeight="18.0" prefWidth="108.0" text="Select Size:">
+<!--        <font>-->
+<!--            <Font name="System Bold" size="18.0" />-->
+<!--        </font>-->
+    </Label>
+    <Label fx:id="errorMessage" layoutX="238.0" layoutY="84.0" prefHeight="18.0" prefWidth="124.0" />
+    <Button layoutX="362.0" layoutY="332.0" mnemonicParsing="false" onAction="#pizzaButton" prefHeight="30.0" prefWidth="124.0" text="Add to Cart" />
+    <Label fx:id="buttonError" layoutX="251.0" layoutY="309.0" prefHeight="38.0" prefWidth="124.0" />
+      <Label layoutX="251.0" layoutY="19.0" prefHeight="45.0" prefWidth="323.0" text="         Speciality Pizza">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+<!--            <ImageView fitHeight="131.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="false">-->
+<!--                <image>-->
+<!--                    <Image url="@../image/DeluxePizza.jpg" />-->
+<!--                </image> </ImageView>-->
+      <ListView fx:id="specialtyToppings" layoutX="22.0" layoutY="212.0" prefHeight="165.0" prefWidth="200.0" />
+      <Label fx:id="priceLabel" layoutX="273.0" layoutY="268.0" prefHeight="26.0" prefWidth="76.0" text="Price:" textFill="#0a0a0a">
+<!--                <font>-->
+<!--                    <Font size="19.0" />-->
+<!--                </font>-->
+            </Label>
+      <Label layoutX="71.0" layoutY="187.0" prefHeight="26.0" prefWidth="102.0" text="        Toppings" />
+      <CheckBox fx:id="extraCheese" layoutX="470.0" layoutY="193.0" mnemonicParsing="false" text="Extra Cheese" />
+      <CheckBox fx:id="extraSauce" layoutX="354.0" layoutY="193.0" mnemonicParsing="false" text="Extra Sauce" />
+      <ImageView fx:id="pizzaImageView" fitHeight="150.0" fitWidth="200.0" layoutX="22.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/mainmenupizza.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="priceField" layoutX="360.0" layoutY="268.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="270.0" layoutY="231.0" text=" Sauce:" />
+      <TextField fx:id="sauceField" layoutX="362.0" layoutY="227.0" prefHeight="26.0" prefWidth="150.0" />
+</children>
+</AnchorPane>

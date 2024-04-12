@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: AFEEEE;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project4software_methodology.StoreOrderController">
+   <children>
+      <Label layoutX="99.0" layoutY="5.0" prefHeight="51.0" prefWidth="460.0" text="                   Store Orders" textAlignment="CENTER">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ListView fx:id="ordersListView" layoutX="42.0" layoutY="111.0" prefHeight="216.0" prefWidth="538.0" />
+      <Button layoutX="116.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleCancelOrder" prefHeight="26.0" prefWidth="184.0" text="Cancel Order" />
+      <Button layoutX="312.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleExportOrders" prefHeight="26.0" prefWidth="184.0" text="Export Orders" />
+      <Label layoutX="69.0" layoutY="79.0" prefHeight="26.0" prefWidth="101.0" text="Order Number" />
+      <ChoiceBox fx:id="orderNumberChoiceBox" layoutX="161.0" layoutY="80.0" prefHeight="26.0" prefWidth="82.0" />
+      <Label layoutX="329.0" layoutY="84.0" prefHeight="17.0" prefWidth="74.0" text="Order Total" />
+      <TextField fx:id="totalField" layoutX="403.0" layoutY="80.0" prefHeight="26.0" prefWidth="89.0" />
+   </children>
+</AnchorPane>
