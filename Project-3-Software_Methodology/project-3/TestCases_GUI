@@ -1,0 +1,93 @@
+/**
+ * @author Rohan Parikh & Ganesh Konda
+ */
+
+--------------------------------------------------------------------------------------------------------
+GUI OPEN TAB
+
+Test Case 1:
+Requirement: There should be an error message printed in the textarea in the GUI if any textfield is empty.
+Test Description: Created a test with empty first name text field.
+Input Data: First Name:  , Last Name: p, Dob: 10/12/1999, intialDepositAmount: 1000, Account Type: Checking
+Expected Result : Warning:"All fields must be filled to open an account" and also prints out "Missing data for opening an account." in textarea.
+
+Test Case 2:
+Requirement: There should be an error message printed in the textarea in the GUI if any accountType radiobutton is not selected.
+Test Description: Created a test with no radio buttons selected in accountType
+Input Data:  First Name: r , Last Name: p, Dob: 10/12/1999, intialDepositAmount: 1000, Account Type:
+Expected Result : Warning:"Please select an account Type" and also prints out "Missing data for opening an account." in textarea.
+
+Test Case 3:
+Requirement: There should be an error message printed in the textarea in the GUI when the amount entered isn't a valid amount
+Test Description: Created a test with an invalid amount
+Input Data: First Name: r, Last Name: p, Dob: 10/12/1999, intialDepositAmount: a, Account Type: Checking
+Expected Result : Prints out "Not a valid amount." in the GUI textarea.
+
+Test Case 4:
+Requirement: There should be an error message printed in the textarea in the GUI when the accountType is College Checking and no campus is selected.
+Test Description: Created a test with accountType: College Checking but no campus selected
+Input Data: First Name: r, Last Name: p, Dob: 10/12/1999, intialDepositAmount: 1000, Account Type: College Checking, Campus:
+Expected Result : Prints out "Not a valid amount." in the GUI textarea.
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
+GUI CLOSE TAB
+
+Test Case 1:
+Requirement: There should be an error message printed in the textarea in the GUI if any textfield is empty.
+Test Description: Created a test with empty first name text field.
+Input Data: First Name:  , Last Name: p, Dob: 10/12/1999, Account Type: Checking
+Expected Result : Warning:"All fields must be filled to close an account" and also prints out "Missing data for closing an account." in textarea.
+
+Test Case 2:
+Requirement: There should be an error message printed in the textarea in the GUI if any accountType radiobutton is not selected.
+Test Description: Created a test with no radio buttons selected in accountType
+Input Data:  First Name: r , Last Name: p, Dob: 10/12/1999, Account Type:
+Expected Result : Warning:"Please select an account Type" and also prints out "Missing data for closing an account." in textarea.
+
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
+GUI DEPOSIT/WITHDRAW TAB
+
+Test Case 1:
+Requirement: There should be an error message printed in the textarea in the GUI if any textfield is empty.
+Test Description: Created a test with empty first name text field.
+Input Data: First Name:  , Last Name: p, Dob: 10/12/1999, Amount: 1000, Account Type: Checking
+Expected Result : Warning:"All fields must be filled out to deposit/withdraw from an account." and also prints out "Missing data for depositing/withdrawing into/from an account." in textarea.
+
+Test Case 2:
+Requirement: There should be an error message printed in the textarea in the GUI if any accountType radiobutton is not selected.
+Test Description: Created a test with no radio buttons selected in accountType
+Input Data:  First Name: r, Last Name: p, Dob: 10/12/1999, Amount: 1000, Account Type:
+Expected Result : Warning:"Please select an account Type" and also prints out "Missing data for depositing/withdrawing into/from an account." in textarea.
+
+Test Case 3:
+Requirement: There should be an error message printed in the textarea in the GUI when the amount entered isn't a valid amount
+Test Description: Created a test with an invalid amount
+Input Data: First Name: r, Last Name: p, Dob: 10/12/1999, Amount: a, Account Type: Checking
+Expected Result : Prints out "Not a valid amount." in the GUI textarea.
+
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
+GUI COMMON ERROR HANDLING
+
+Test Case 1:
+Requirement: There should be an error message printed in the textarea in the GUI if the date isn't a valid date.
+Test Description: Created a test with a future date.
+Input Data: First Name: r, Last Name: p, Dob: 11/7/2023, Amount: 1000, Account Type: Checking
+Expected Result : Prints out "DOB invalid: 11/7/2023 cannot be today or a future date!" in textarea.
+
+Test Case 2:
+Requirement: There should be an error message printed in the textarea in the GUI if the date isn't a valid date for College Checking.
+Test Description: Created a test with empty first name text field.
+Input Data: First Name: r, Last Name: p, Dob: 11/2/2023, Amount: 1000, Account Type: College Checking, Campus: NB
+Expected Result : Prints out "DOB invalid: 11/2/2023 under 16." in textarea.
+
+Test Case 3:
+Requirement: There should be an error message printed in the textarea in the GUI if the date isn't a valid date for College Checking.
+Test Description: Created a test with empty first name text field.
+Input Data: First Name: r, Last Name: p, Dob: 11/2/1997, Amount: 1000, Account Type: College Checking, Campus: NB
+Expected Result : Prints out "DOB invalid: 11/2/1997 over 24." in textarea.
+--------------------------------------------------------------------------------------------------------
